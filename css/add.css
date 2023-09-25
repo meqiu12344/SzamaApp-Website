@@ -1,0 +1,145 @@
+.main_section main{
+    width: 50%;
+    margin: 0 auto;
+}
+
+.top{
+    width: 100%;
+    display: flex;
+    gap: 30px;
+}
+
+.file-input-container, .name-input-container{
+    width: 50%;
+}
+
+.file-input-container label{
+    background-color: #fff;
+}
+
+.name-input-container{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.name-input-container label{
+    width: 100%;
+}
+
+.name-input-container label input{
+    width: 100%;
+    padding: 9px;
+}
+
+.file-input-label {
+    display: block;
+    margin-bottom: 10px;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 4px;
+
+    color: gray;
+    font-size: 15px;
+}
+
+.file-input {
+    display: none;
+}
+
+.button {
+    background-color: #0096c7;
+    color: white;
+    border: none;
+
+    padding: 10px;
+    width: 30%;
+    text-align: center;
+
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.button:hover {
+    background-color: #2980b9;
+}
+
+input[type="text"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    resize: vertical;
+}
+
+input, textarea:focus{
+    outline: none;
+}
+
+.cate{
+    border: none;
+    width: 100%;
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+.title{
+    width: 100%;
+}
+
+.title-input{
+    width: 100%;
+}
+
+.ingredients label, .preparation label{
+    display: flex;
+}
+
+label i{
+    font-size: 30px;
+    margin-bottom: 15px;
+    color: red;
+}
+
+/* Stylowanie nagłówków sekcji */
+h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+/* Stylowanie przycisku submit */
+input[type="submit"] {
+    background-color: #ffb3c6;
+    width: 50%;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+input[type="submit"]:hover {
+    background-color: #ffb3c6;
+    letter-spacing: 4px;
+}
+
+
+@media screen and (max-width: 1200px) {
+    .main_section main{
+        width: 90%;
+    }
+
+    .top{
+        flex-direction: column;
+        gap: 0px;
+    }
+
+    .file-input-container, .name-input-container{
+        width: 100%;
+    }
+}

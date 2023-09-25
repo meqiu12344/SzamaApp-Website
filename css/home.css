@@ -1,0 +1,45 @@
+section{
+    width: 100%;
+    position: absolute;
+    right: 0;
+}
+
+section main{
+    width: 50%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 30px;
+}
+
+.col-12{
+    margin-bottom: 30px;
+}
+
+.img{
+    width: 100%;
+}
+
+.img img{
+    width: 100%;
+    height: auto;
+}
+
+.title{
+    text-align: left;
+}
+
+.data{
+    font-size: 13px;
+    color: gray;
+}
+
+.opis{
+    text-align: justify;
+}
+
+@media screen and (max-width: 900px) {
+    section main{
+        width: 60%;
+    }
+}

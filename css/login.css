@@ -1,0 +1,190 @@
+body{
+    margin: 0;
+    padding: 0;
+
+    background-color: #caf0f8;
+
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.app{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h1{
+    font-size: 50px;
+    font-weight: 700;
+    font-family: 'Dancing Script';
+    color: #ffb3c6;
+    margin: 35px;
+}
+
+a{
+    color: #ffb3c6;
+}
+
+hr{
+    width: 20%;
+    border: 0.5px solid #0096c7;
+}
+
+main{
+    width: 65%;
+    height: 80%;
+    
+    border-radius: 40px 15px;
+
+    display: flex;
+}
+
+.register{
+    flex-direction: row-reverse;
+}
+
+.left , .right{
+    width: 50%;
+}
+
+.left{
+    background-image: url("../foto/login-bg.jpg");
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover; 
+
+    border-radius: inherit;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    text-align: center;
+}
+
+.register .left{
+    border-radius: 0 15px 40px 0;
+}
+
+.register .right{
+    border-radius: 40px 0 0 15px;
+}
+
+.left i{
+    width: 50%;
+    color: #fff;
+}
+
+.right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 0 15px 40px 0;
+
+    background-color: aliceblue;
+}
+
+.right form{
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 15px;
+}
+
+form label{
+    width: 50%;
+
+    margin: 0 auto;
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.register form label{
+    align-items: flex-end;
+}
+
+input{
+    padding: 0;
+    margin: 0 auto;
+
+    padding: 10px 5px;
+    width: 100%;
+    border: 1px solid #ffb3c6;
+    border-radius: 4px;
+}
+
+input:focus{
+    outline: none;
+}
+
+.submit{
+    margin: 0;
+}
+
+input[type="submit"]{
+    border: none;
+    padding: 15px 0;
+    margin: 0;
+    margin-top: 10px;
+
+    width: 65%;
+
+    font-size: 18px;
+    font-weight: bold;
+    background:#0096c7 ;
+    color: white;
+
+    justify-content: flex-end;
+}
+
+input[type='submit']:hover{
+    cursor:pointer;
+}
+
+
+@media screen and (max-width: 1200px) {
+    main, .register{
+        flex-direction: column;
+        width: 100%;
+        height: 100vh;
+    }
+
+    .left , .right, .register .left{
+        width: 100%;
+        border-radius: 0;
+    }
+
+    .left{
+        padding: 100px 0;
+    }
+
+    .right{
+        height: 100%;
+        padding-bottom: 40px;
+    }
+
+    .register .left{
+        padding: 80px 0;
+    }
+
+    .register .right{
+        background-color: #fff;
+        padding-bottom: 50px;
+    }
+
+    .right label{
+        width: 80%;
+    }
+}

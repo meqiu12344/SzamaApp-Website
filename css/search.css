@@ -1,0 +1,43 @@
+.main_section main{
+    width: 50%;
+    margin: 0 auto;
+}
+
+.row{
+    width: 100%;
+    margin: 0;
+}
+
+.col-12{
+
+    margin: 10px 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+
+    font-size: 40px;
+    font-weight: 700;
+    color: #fff;
+
+    padding: 70px 0;
+
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover; 
+
+    transition: 0.3s;
+}
+
+.col-12:hover{
+    font-weight: 900;
+    letter-spacing: 3px;
+}
+
+@media screen and (max-width: 1200px) {
+    .main_section main{
+        width: 90%;
+    }
+}
